@@ -1,3 +1,6 @@
+import { getter } from './getter'
+import { jsonResponse } from './wrapper'
+
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
@@ -6,7 +9,7 @@ addEventListener('fetch', event => {
  * @param {Request} request
  */
 async function handleRequest(request) {
-  return new Response('Hello worker!', {
-    headers: { 'content-type': 'text/plain' },
-  })
+  const r = await getter()
+
+  return jsonResponse(200, r)
 }

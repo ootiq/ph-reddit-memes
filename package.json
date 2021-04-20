@@ -12,5 +12,9 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "url-join": "^4.0.1"
   }
 }
