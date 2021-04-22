@@ -1,15 +1,20 @@
-# 👷 `worker-template` Hello World
+# ph-reddit-memes
 
-A template for kick starting a Cloudflare worker project.
+Just a simple worker for parsing reddit posts from specific communities.
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
+## Currently added subreddits:
 
-#### Wrangler
+- [r/PampamilyangPaoLUL](https://reddit.com/r/PampamilyangPaoLUL)
+- [r/pinoymemes](https://reddit.com/r/pinoymemes)
+- [r/BikiniBottomTwitter](https://reddit.com/r/BikiniBottomTwitter)
+- [r/Philippines](https://reddit.com/r/Philippines)
 
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
+## TODO:
 
-```
-wrangler generate projectname https://github.com/cloudflare/worker-template
-```
+- Specific requests
+- Allow request limiting
+- Support for `gallery` posts or multi-images
 
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+##
+
+### &copy; TheBoringDude | 2021
