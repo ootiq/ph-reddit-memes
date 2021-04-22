@@ -1,4 +1,4 @@
-import { getter } from './getter'
+import { parser } from './parse'
 import { jsonResponse } from './wrapper'
 
 addEventListener('fetch', event => {
@@ -9,7 +9,7 @@ addEventListener('fetch', event => {
  * @param {Request} request
  */
 async function handleRequest(request) {
-  const r = await getter()
+  const r = await parser()
 
   return jsonResponse(200, r)
 }
